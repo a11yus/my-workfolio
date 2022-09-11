@@ -33,6 +33,14 @@
   margin-top: 2.4em;
 }
 
+.about__contact {
+  margin-right: 27rem;
+}
+
+.about_handles {
+  margin-top: 1rem;
+  margin-right: 20rem;
+}
 .about .link--icon {
   margin-right: 0.8em;
 }

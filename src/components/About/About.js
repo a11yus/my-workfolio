@@ -10,7 +10,9 @@ const About = () => {
     <div className='about center'>
       {name && (
         <h1>
-          Hi !, I am <span className='about__name'>{name}.</span>
+          Hi !, 
+          <br />
+          I am <span className='about__name'>{name}.</span>
         </h1>
       )}
 
@@ -29,12 +31,23 @@ const About = () => {
         {resume && (
           <a href={resume}>
             <span type='button' className='btn btn--outline'>
-              Resume
+             ⤷ Resume
             </span>
           </a>
         )}
+        </div>
 
-        {social && (
+      <div className="about_handles">
+      <h3 
+      style=
+      {{
+        width: '250px',
+        marginTop: '2rem',
+        marginBottom: '2rem'
+
+      }}
+      >Feeling social ?<br /> Find me on these online spaces too !</h3>
+      {social && (
           <>
             {social.github && (
               <a
@@ -42,22 +55,33 @@ const About = () => {
                 aria-label='github'
                 className='link link--icon'
               >
-                <GitHubIcon />
+                <GitHubIcon 
+                style=
+                {{
+                  fontSize: '3rem',
+                  marginBottom: '1rem'
+                }}
+                />
               </a>
             )}
-
+          <br />
             {social.linkedin && (
               <a
                 href={social.linkedin}
                 aria-label='linkedin'
                 className='link link--icon'
               >
-                <LinkedInIcon />
+              <LinkedInIcon
+                style=
+                {{
+                  fontSize: '3rem',
+                }}
+                />
               </a>
             )}
           </>
         )}
-      </div>
+        </div>
     </div>
   )
 }
