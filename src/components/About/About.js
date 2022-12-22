@@ -8,6 +8,17 @@ const About = () => {
 
   return (
     <div className='about center'>
+       <img 
+       style= 
+       {{
+        marginBottom: '1rem',
+        marginTop: '-4rem',
+        borderRadius: '50%',
+        boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+       }}
+      src='https://i.imgur.com/dAStMZV.png'
+      alt='ayush image'
+      />
       {name && (
         <h1>
           Hi !, 

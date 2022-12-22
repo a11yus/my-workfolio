@@ -1,7 +1,7 @@
-import uniqid from 'uniqid'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
-import './ProjectContainer.css'
+import uniqid from 'uniqid';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LaunchIcon from '@material-ui/icons/Launch';
+import './ProjectContainer.css';
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
@@ -37,7 +37,7 @@ const ProjectContainer = ({ project }) => (
         className='link link--icon'
       >
         <LaunchIcon />
-        <p style={{ fontFamily: 'Courier'}}>View It Here</p>
+        <p style={{ fontFamily: 'Courier'}}>Preview It Here</p>
       </a>
     )}
   </div>
