@@ -49,13 +49,11 @@ const About = () => {
         <li>{act4}</li>
       </ul>
       {/* 🚀 Ready to Take the Next Step? Check Out My Resume! Hire me before someone else does! 📄📂😎✨ */}
-
       <div className="about__contact center">
         <h4>
           🚀 Ready to Take the Next Step ❓
           <br /> Check Out My Resume !
         </h4>
-
         {resume && (
           <a href={resume} target="_blank" download="Ayush_kmr_resume.pdf" rel="noopener noreferrer">
             <span type="button" className="btn btn--outline">
@@ -91,7 +89,7 @@ const About = () => {
                     fontSize: "3rem",
                     marginBottom: "1rem",
                   }}
-                />
+                />  
               </a>
             )}
             <br />
