@@ -1,15 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Pacifico&display=swap");
+
 .about {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 2em;
+}
+
+.hero__section {
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.hero__image {
+  margin-top: -1rem;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .about__name {
-  color: var(--clr-primary);
-  font-family: monospace;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 5px 1px 0px var(--clr-primary), 8px 4px 2px #69acdd;
 }
 
 .about__role {
   margin-top: 1.2em;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  font-variation-settings: "ROND" 0;
+  text-shadow: 6px 3px 6px rgb(146, 138, 143);
 }
 
 .about__desc {
@@ -34,12 +58,14 @@
 }
 
 .about__contact {
-  margin-right: 27rem;
+  display: inline-flex;
+  gap: 8em;
 }
 
 .about_handles {
-  margin-top: 1rem;
-  margin-right: 20rem;
+  margin-top: 3em;
+  display: inline-flex;
+  gap: 4em;
 }
 .about .link--icon {
   margin-right: 0.8em;
@@ -53,5 +79,10 @@
   .app .about {
     align-items: flex-start;
     margin-top: 2em;
+  }
+
+  .hero__section {
+    display: block;
+    text-align: center;
   }
 }
